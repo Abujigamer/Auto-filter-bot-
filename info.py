@@ -1,4 +1,4 @@
-import re
+deimport re
 from os import environ,getenv
 from Script import script 
 
@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '28284211'))
-API_HASH = environ.get('API_HASH', '6b0afc140b8534c45de9dc77b7d37415')
+API_ID = int(environ.get('API_ID', '29074967'))
+API_HASH = environ.get('API_HASH', '1a0e73b9d866247e7ff9ddda38981112)
 BOT_TOKEN = environ.get('BOT_TOKEN', "5634679884:AAH6KjE4JbS5rD3ljyZSJZJx6I-rbz5WYG4")
 
 # Bot settings
@@ -61,7 +61,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+DAKP65TG-rpmZWU1')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/howtodownloadmoviestamilhd/65')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nanbha and Nanbis ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001840433141'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002145587193)
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'rionetworksupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
