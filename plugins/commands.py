@@ -31,9 +31,9 @@ async def start(client, message):
                     InlineKeyboardButton(' 🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🔱 Support Group 🔱', url="https://t.me/Deendayal_Dhakad_Group"),
-                    InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/+UexCvjiPgXljNDRl')
+                    InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/Favouritemoves')
                 ],[
-                  InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/Deendayal_dhakad')
+                  InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/+_UOeHlVkitA5M2E1')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -56,7 +56,7 @@ async def start(client, message):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                  InlineKeyboardButton('⚜️ Join Updates Channel ⚜️', url='https://t.me/Deendayal_dhakad')
+                  InlineKeyboardButton('⚜️ Join Updates Channel ⚜️', url='https://t.me/+wcvG8_ZqjOBkZjg9')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
