@@ -30,8 +30,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton(' 🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🔱 Support Group 🔱', url="https://t.me/Deendayal_Dhakad_Group"),
-                    InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/Favouritemoves')
+                    InlineKeyboardButton('🔱 Support Group 🔱', url="https://t.me/'Abuji_support'),
+                    InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/'Favouritemoves')
                 ],[
                   InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/+_UOeHlVkitA5M2E1')
                   ]]
@@ -51,7 +51,7 @@ async def start(client, message):
                     InlineKeyboardButton('🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/+UexCvjiPgXljNDRl')
+                    InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/Favouritemoves")
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
@@ -161,7 +161,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('⚜️ Updates Channel ⚜️', url="https://t.me/Deendayal_dhakad")
+                                InlineKeyboardButton('⚜️ Updates Channel ⚜️', url="https://t.me/https://t.me/Abuji_update")
                             ],[
                                 InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                             ]
@@ -179,7 +179,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("⚜️ Updates Channel ⚜️", url="t.me/Deendayal_dhakad")
+                          InlineKeyboardButton("⚜️ Updates Channel ⚜️", url="t.me/Abuji_update")
                          ],[ 
                             InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                             ]
