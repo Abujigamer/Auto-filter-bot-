@@ -28,8 +28,8 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-    [InlineKeyboardButton('🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')],
-    
+    [InlineKeyboardButton('🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
+    ]]
             [InlineKeyboardButton('🔱 Support Group 🔱', url="https://t.me/+AY5o4Wx52KQ1NjRl")
                     InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/Favouritemoves')
                 ],[
@@ -57,9 +57,7 @@ async def start(client, message):
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                   InlineKeyboardButton('⚜️ Join Updates Channel ⚜️', url='https://t.me/Abuji_update')
-                  
-    
-                  ]]
+                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
         await asyncio.sleep(1)
@@ -87,7 +85,7 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe":
-            try:
+           y:
                 kk, file_id = message.command[1].split("_", 1)
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
             except (IndexError, ValueError):
