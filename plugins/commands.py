@@ -28,9 +28,10 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton(' 🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🔱 Support Group 🔱', url='https://t.me/Abujisupport')
+                    ([
+    [InlineKeyboardButton('🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')],
+    [InlineKeyboardButton('🔱 Support Group 🔱', url='https://t.me/+AY5o4Wx52KQ1NjRl')]
+])
                     InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/Favouritemoves')
                 ],[
                   InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/Abuji_update')
