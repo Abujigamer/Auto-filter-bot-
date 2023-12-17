@@ -33,7 +33,7 @@ async def start(client, message):
                     InlineKeyboardButton('🔱 Support Group 🔱', url="https://t.me/'Abuji_support'),
                     InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/'Favouritemoves')
                 ],[
-                  InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/+_UOeHlVkitA5M2E1')
+                  InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/Abuji_update')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -56,7 +56,9 @@ async def start(client, message):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                  InlineKeyboardButton('⚜️ Join Updates Channel ⚜️', url='https://t.me/+wcvG8_ZqjOBkZjg9')
+                  InlineKeyboardButton('⚜️ Join Updates Channel ⚜️', url='https://t.me/Abuji_update')
+                  
+    
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
@@ -321,7 +323,7 @@ async def start(client, message):
                 btn = [[
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
-                    InlineKeyboardButton('How to verify', url='https://t.me/Deendayal_dhakad')
+                    InlineKeyboardButton('How to verify', url='https://t.me/Abuji_update')
                 ]]
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !\n\nइस Bot से मूवी प्राप्त करने के लिए आपको Verify करना होगा नहीं तो आप मूवी प्राप्त नहीं कर सकते।</b>",
@@ -337,7 +339,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton("⚜️ Update Channel ⚜️", url="t.me/Deendayal_dhakad")
+                      InlineKeyboardButton("⚜️ Update Channel ⚜️", url="https://t.me/Abuji_update")
                      ],[
                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                      ]
@@ -400,7 +402,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton("⚜️ Update Channel ⚜️", url="t.me/Deendayal_dhakad")
+                      InlineKeyboardButton("⚜️ Update Channel ⚜️", url="t.me/Abuji_update")
                      ],[
                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                      ]
@@ -461,7 +463,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton("⚜️ Update Channel ⚜️", url="t.me/Deendayal_dhakad")
+              InlineKeyboardButton("⚜️ Update Channel ⚜️", url="t.me/Abuji_update")
              ],[
               InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
              ]
@@ -804,7 +806,7 @@ async def save_template(client, message):
     if (
             st.status != enums.ChatMemberStatus.ADMINISTRATOR
             and st.status != enums.ChatMemberStatus.OWNER
-            and str(userid) not in ADMINS
+            and str(@AltamashAnsari1) not in ADMINS
     ):
         return
 
@@ -902,7 +904,7 @@ async def requests(bot, message):
               ]]
         await message.reply_text("<b>Your request has been added! Please wait for some time.\n\nJoin Channel First & View Request</b>", reply_markup=InlineKeyboardMarkup(btn))
     
-@Client.on_message(filters.command("send") & filters.user(ADMINS))
+@Client.on_message(filters.command("send") & filters.user(@AltamashAnsari))
 async def send_msg(bot, message):
     if message.reply_to_message:
         target_id = message.text.split(" ", 1)[1]
@@ -962,7 +964,7 @@ async def shortlink(bot, message):
         return await message.reply(f"You are anonymous admin. Turn off anonymous admin and try again this command")
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n—> /shortlink ""{your_shortener_website_name} {your_shortener_api}\n\n#Sample:-\n/shortlink kpslink.in CAACAgUAAxkBAAEJ4GtkyPgEzpIUC_DSmirN6eFWp4KInAACsQoAAoHSSFYub2D15dGHfy8E\n\nThat's it!!! Enjoy Earning Money 💲\n\n[[[ Trusted Earning Site - https://kpslink.in]]]\n\nIf you have any Doubts, Feel Free to Ask me - @Deendayal_dhakad\n\n(Puriyala na intha contact la message pannunga - @Deendayal_dhakad)</b>")
+        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n—> /shortlink ""{your_shortener_website_name} {your_shortener_api}\n\n#Sample:-\n/shortlink kpslink.in CAACAgUAAxkBAAEJ4GtkyPgEzpIUC_DSmirN6eFWp4KInAACsQoAAoHSSFYub2D15dGHfy8E\n\nThat's it!!! Enjoy Earning Money 💲\n\n[[[ Trusted Earning Site - https://kpslink.in]]]\n\nIf you have any Doubts, Feel Free to Ask me - @AltamashAnsari\n\n(Puriyala na intha contact la message pannunga - @AltamashAnsari)</b>")
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
@@ -1040,7 +1042,7 @@ async def showshortlink(bot, message):
 #         st = settings['tutorial']
 #     else:
 #         return await message.reply_text("<b>Tutorial Link Not Connected\n\nYou can Connect Using /set_tutorial command</b>")
-    if user.status != enums.ChatMemberStatus.ADMINISTRATOR and user.status != enums.ChatMemberStatus.OWNER and str(userid) not in ADMINS:
+    if user.status != enums.ChatMemberStatus.ADMINISTRATOR and user.status != enums.ChatMemberStatus.OWNER and str(@AltamashAnsari) not in ADMINS:
         return await message.reply_text("<b>Tʜɪs ᴄᴏᴍᴍᴀɴᴅ Wᴏʀᴋs Oɴʟʏ Fᴏʀ ᴛʜɪs Gʀᴏᴜᴘ Oᴡɴᴇʀ/Aᴅᴍɪɴ\n\nTʀʏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʏᴏᴜʀ Oᴡɴ Gʀᴏᴜᴘ, Iғ Yᴏᴜ Aʀᴇ Usɪɴɢ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ</b>")
     else:
         settings = await get_settings(chat_id) #fetching settings for group
@@ -1113,7 +1115,7 @@ async def removetutorial(bot, message):
     await save_group_settings(grpid, 'is_tutorial', False)
     await reply.edit_text(f"<b>Successfully Removed Your Tutorial Link!!!</b>")
 
-@Client.on_message(filters.command("restart") & filters.user(ADMINS))
+@Client.on_message(filters.command("restart") & filters.user(@AltamashAnsari))
 async def stop_button(bot, message):
     msg = await bot.send_message(text="**🔄 𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙴𝚂 𝚂𝚃𝙾𝙿𝙴𝙳. 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶...**", chat_id=message.chat.id)       
     await asyncio.sleep(3)
