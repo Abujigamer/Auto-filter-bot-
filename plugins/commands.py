@@ -28,13 +28,13 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-    [InlineKeyboardButton('🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
-    ]]
-      InlineKeyboardButton('🔱 Support Group 🔱', url="https://t.me/+AY5o4Wx52KQ1NjRl")
-      InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/Favouritemoves')
-    ],[
-       InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/Abuji_update')
-        ]
+                    InlineKeyboardButton(' 🔰 Add Me To Your Group 🔰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                ],[
+                    InlineKeyboardButton('🔱 Support Group 🔱', url="https://t.me/Deendayal_Dhakad_Group"),
+                    InlineKeyboardButton('🌿 Movie Group 🌿', url='https://t.me/+UexCvjiPgXljNDRl')
+                ],[
+                  InlineKeyboardButton('⚜️ Update channel ⚜️', url='https://t.me/Deendayal_dhakad')
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
