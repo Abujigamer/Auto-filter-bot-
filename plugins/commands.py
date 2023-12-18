@@ -85,7 +85,7 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe":
-           y:
+           try::
                 kk, file_id = message.command[1].split("_", 1)
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
             except (IndexError, ValueError):
