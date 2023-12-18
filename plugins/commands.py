@@ -804,7 +804,7 @@ async def save_template(client, message):
     if (
             st.status != enums.ChatMemberStatus.ADMINISTRATOR
             and st.status != enums.ChatMemberStatus.OWNER
-            and str(@AltamashAnsari1) not in ADMINS
+            and str(userid) not in ADMINS
     ):
         return
 
@@ -902,7 +902,7 @@ async def requests(bot, message):
               ]]
         await message.reply_text("<b>Your request has been added! Please wait for some time.\n\nJoin Channel First & View Request</b>", reply_markup=InlineKeyboardMarkup(btn))
     
-@Client.on_message(filters.command("send") & filters.user(@AltamashAnsari))
+@Client.on_message(filters.command("send") & filters.user(ADMINS)
 async def send_msg(bot, message):
     if message.reply_to_message:
         target_id = message.text.split(" ", 1)[1]
