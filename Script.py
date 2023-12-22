@@ -209,11 +209,11 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : <a href=https://t.me/Deendayal_dhakad>{file_caption}</a>
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : <a href=https://t.me/Bot_Altu>{file_caption}</a>
 
 <b> Size ⚙️: {file_size}
 
-<b> ⚜️ Powered By : <a href=https://t.me/Deendayal_dhakad>[Deendayal_Dhakad]</a></b>"""
+<b> ⚜️ Powered By : <a href=https://t.me/Bot_Altu>[Bot_Altu]</a></b>"""
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
 
